@@ -1,7 +1,44 @@
 <!DOCTYPE html>
-<html>
-   <body style="background-color:rgb(212, 240, 234);">
-      <h1>Hello World. This is test. This is test</h1>
-      <h2>This is demo for Azure DevOps</h2>
-   </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Typography</title>
+  
+  </head>
+  <body>
+    <!-- Font Family -->
+    <h1></h1>
+    <script>
+       function showBrowserWidth() {
+          const width=window.innerWidth;
+          document.querySelector('h1').innerText = `width: ${width}`;
+       }
+
+       window.onload = showBrowserWidth
+       window.onresize = showBrowserWidth
+    </script>
+
+    <div class="container mx-auto mt-10 bg-white dark:bg-slate-900 rounded-xl px-6 py-8 shadow-xl">
+      <h3 class="text-slate-900 dark:text-white font-medium tracking-tight">
+         Lorem ipsum, dolor sit amet consectetur 
+      </h3>
+      <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sit non et odit similique libero nihil omnis ex, at sapiente perferendis 
+         debitis recusandae quos doloremque quis porro! Repudiandae, assumenda illum.
+      </p>
+    </div>
+    <img src='./asset/kenkenkoizumi.jfif' width="500" height="500"/>
+    <label for="default-toggle" class="inline-flex relative items-center cursor-pointer">
+      <input type="checkbox" value="" id="default-toggle" class="sr-only peer">
+      <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+      <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Toggle me</span>
+    </label>
+    
+    
+
+  </body>
 </html>
+
